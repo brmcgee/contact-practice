@@ -10,56 +10,59 @@
 <body>
     
 
-    <div class="alert alert-primary h4" role="alert">
-        Customer Contact Database
-    </div>
-
-    <form id="myForm" class="container-md" style="margin-top: 10px; margin-bo ttom: 10px;">
-        <div class="row mb-3">
-            <label for="fname" class="col-sm-2 col-form-label">First name</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="fname" placeholder="first name">
-            </div>    
+    <div class="container-md alert alert-secondary">
+        <div class="alert alert-primary h4" role="alert">
+            Customer Contact Database
         </div>
-
-        <div class="row mb-3">
-            <label for="lname" class="col-sm-2 col-form-label">Last name</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="lname" placeholder="last name">
+    
+        <form id="myForm" class="container-sm" style="margin-top: 10px; margin-bottom: 10px;">
+            <div class="row mb-3">
+                <label for="fname" class="col-sm-2 col-form-label">First name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="fname" placeholder="first name">
+                </div>    
             </div>
-        </div>
-
-        <div class="row mb-3">
-            <label for="phone" class="col-sm-2 col-form-label">Phone</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="phone" placeholder="phone">
+    
+            <div class="row mb-3">
+                <label for="lname" class="col-sm-2 col-form-label">Last name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="lname" placeholder="last name">
+                </div>
             </div>
-        </div>
-
-        <div class="row mb-3">
-            <label for="email" class="col-sm-2 col-form-label">Email</label>
-            <div class="col-sm-10">
-                <input type="email" class="form-control" id="email" placeholder="email">
+    
+            <div class="row mb-3">
+                <label for="phone" class="col-sm-2 col-form-label">Phone</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="phone" placeholder="phone">
+                </div>
             </div>
+    
+            <div class="row mb-3">
+                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="email">
+                </div>
+            </div>
+    
+            <div class="btn-grp text-center" role="group" aria-label="Navigation Buttons">
+                <button type="button" class="btn btn-outline-primary" onclick="back()">Back</button>
+                <button type="button" class="btn btn-outline-primary" onclick="clearFields()">Clear</button>
+                <button type="button" class="btn btn-outline-primary" onclick="add()">Add</button>
+                <button type="button" class="btn btn-outline-primary" onclick="next()">Next</button>
+            </div>
+    
+        </form>
+    
+        <div class="row alert alert-secondary h6" style="margin-top: 5px;" role="alert">
+            <div class="col">Version 1.0</div>
+            <small class="col text-end">Copyright 2023 BRM-DEV</small>
         </div>
-
-        <div class="btn-grp text-center" role="group" aria-label="Navigation Buttons">
-            <button type="button" class="btn btn-outline-primary" onclick="back()">Back</button>
-            <button type="button" class="btn btn-outline-primary" onclick="clearFields()">Clear</button>
-            <button type="button" class="btn btn-outline-primary" onclick="add()">Add</button>
-            <button type="button" class="btn btn-outline-primary" onclick="next()">Next</button>
+    
+        <div class="container-md" onload="itemList()">
+            <p id="listArea"></p>
         </div>
-
-    </form>
-
-    <div class="row alert alert-secondary h6" style="margin-top: 5px;" role="alert">
-        <div class="col">Version 1.0</div>
-        <small class="col text-end">Copyright 2023 BRM-DEV</small>
-    </div>
-
-    <div class="container-md" onload="itemList()">
-        <p id="listArea"></p>
-    </div>
+      </div>
+    
 
  
 
